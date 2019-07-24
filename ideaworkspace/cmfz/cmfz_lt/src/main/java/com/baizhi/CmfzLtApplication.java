@@ -13,8 +13,8 @@ public class CmfzLtApplication {
         System.out.println("第2次提交");
         System.out.println("第3次提交");
         System.out.println("第4次提交");
+        System.out.println("==========");
 
-        System.out.println("----------");
 
         SpringApplication.run(CmfzLtApplication.class, args);
     }
