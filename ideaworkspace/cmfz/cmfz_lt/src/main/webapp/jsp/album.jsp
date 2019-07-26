@@ -84,6 +84,18 @@
         }).jqGrid("navGrid","#albumPager",{},{
             //修改的部分
             closeAfterEdit:true,
+            afterSubmit:function(response){
+                $.ajaxFileUpload({
+                    url:"${pageContext.request.contextPath}/album/upload",
+                    fileElementId:"cover",
+                    data:{"id":response.responseText},
+                    type:"post",
+                    success:function(){
+                        $("#albumTable").trigger("reloadGrid");
+                    }
+                })
+                return "[true]";
+            }
         },{
             //添加的部分
             closeAfterAdd:true,
