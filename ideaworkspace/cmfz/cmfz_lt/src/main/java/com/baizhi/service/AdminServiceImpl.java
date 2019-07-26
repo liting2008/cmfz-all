@@ -40,5 +40,16 @@ public class AdminServiceImpl implements AdminService {
         return map;
     }
 
+    @Override
+    public Admin queryOne(String username) {
+        Admin admin = adminDao.selectAdminByUserName(username);
+        return admin;
+    }
+
+    @Override
+    public void addAdmin(Admin admin) {
+        adminDao.insertAdmin(admin);
+    }
+
 
 }
