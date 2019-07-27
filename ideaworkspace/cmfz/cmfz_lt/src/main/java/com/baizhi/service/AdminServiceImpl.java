@@ -1,5 +1,6 @@
 package com.baizhi.service;
 
+import com.baizhi.annotation.AopAnnotation;
 import com.baizhi.dao.AdminDao;
 import com.baizhi.entity.Admin;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +19,7 @@ public class AdminServiceImpl implements AdminService {
     AdminDao adminDao;
     @Override
     @Transactional(propagation = Propagation.SUPPORTS,readOnly = true)
+    @AopAnnotation
     public List<Admin> queryAll() {
         List<Admin> list = adminDao.selectAll();
         return list;

@@ -110,6 +110,13 @@
             <artifactId>shiro-ehcache</artifactId>
             <version>1.4.1</version>
         </dependency>
+        <!--切面-->
+        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-aop -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+            <version>2.1.4.RELEASE</version>
+        </dependency>
 
 
     </dependencies>

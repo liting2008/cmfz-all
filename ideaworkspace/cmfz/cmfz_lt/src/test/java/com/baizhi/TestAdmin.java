@@ -25,6 +25,11 @@ public class TestAdmin {
         }
         @Test
     public void test2(){
-            adminService.addAdmin(new Admin(UUID.randomUUID().toString(),"123456","123456"));
+            //测试mybatis缓存
+           // adminService.addAdmin(new Admin(UUID.randomUUID().toString(),"123456","123456"));
+
+            //测试切面
+            Admin admin = adminService.queryOne("1");
+            System.out.println(admin);
         }
 }
