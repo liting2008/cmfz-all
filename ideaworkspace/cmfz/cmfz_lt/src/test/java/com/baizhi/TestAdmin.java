@@ -31,5 +31,6 @@ public class TestAdmin {
             //测试切面
             Admin admin = adminService.queryOne("1");
             System.out.println(admin);
+             System.out.println("1");
         }
 }
