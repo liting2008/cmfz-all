@@ -31,6 +31,7 @@ public class TestAdmin {
             //测试切面
             Admin admin = adminService.queryOne("1");
             System.out.println(admin);
-             System.out.println("1");
+            //测试一下pull（远程仓库修改了才能pull到本地仓库）
+            System.out.println("1");
         }
 }
