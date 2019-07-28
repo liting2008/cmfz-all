@@ -1,4 +1,4 @@
-package com.baizhi.cache;
+/*package com.baizhi.cache;
 
 import com.baizhi.util.SerializeUtils;
 import com.baizhi.util.SpringContextUtil;
@@ -6,9 +6,13 @@ import org.apache.ibatis.cache.Cache;
 import org.springframework.data.redis.core.StringRedisTemplate;
 
 import java.util.concurrent.locks.ReadWriteLock;
-/*
- * 测试mybatis缓存
- * */
+
+
+import com.baizhi.util.SerializeUtils;
+import com.baizhi.util.SpringContextUtil;
+import org.springframework.data.redis.core.StringRedisTemplate;
+
+import java.util.concurrent.locks.ReadWriteLock;
 
 public class MyBatisCache implements Cache {
     //id属性就是namespace，也就是service类
@@ -71,3 +75,4 @@ public class MyBatisCache implements Cache {
         return null;
     }
 }
+*/

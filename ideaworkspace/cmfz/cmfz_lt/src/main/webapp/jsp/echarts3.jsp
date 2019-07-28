@@ -16,7 +16,7 @@
     <script>
         $(function () {
             var goEasy = new GoEasy({
-                appkey: 'BC-2e977302132f49b0bc9c69ae2f9ba070'
+                appkey: 'BC-5a129bc32c42435db40f84691bea58d5'
             })
 
             goEasy.subscribe({

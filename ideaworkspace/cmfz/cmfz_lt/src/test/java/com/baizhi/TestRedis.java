@@ -14,11 +14,18 @@ public class TestRedis {
     private StringRedisTemplate stringRedisTemplate;
     @Test
     public void test1(){
-        stringRedisTemplate.opsForValue().set("name","zhangsan");
+        stringRedisTemplate.opsForValue().set("name","lisi");
     }
     @Test
     public void test2(){
         String name = stringRedisTemplate.opsForValue().get("name");
         System.out.println(name);
+        System.out.println("第1次提交5646541");
+        System.out.println("第2次提交");
+        System.out.println("第3次提交");
+        System.out.println("第4次提交");
+        System.out.println("==========");
+        System.out.println("++++++++++");
+        System.out.println("----------");
     }
 }
